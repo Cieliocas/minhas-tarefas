@@ -7,8 +7,9 @@ function App() {
     <>
       <EstiloGlobal />
       <Container>
-        <BarraLateral />
-        <ListaDeTarefas />
+        <BarraLateral>
+          <ListaDeTarefas />
+        </BarraLateral>
       </Container>
     </>
   )

@@ -1,15 +1,17 @@
 import styled from 'styled-components'
 
-export const Card = styled.div`
+import { Props } from '.'
+
+export const Card = styled.div<Props>`
   padding: 8px;
-  border: 1px solid #a1a1a1;
-  background-color: #fcfcfc;
-  color: #5e5e5e;
+  border: 1px solid ${(props) => (props.ativo ? '#1E90FF' : '#A1A1A1')};
+  background-color: ${(props) => (props.ativo ? '#fff' : '#fcfcfc')};
+  color: ${(props) => (props.ativo ? '#1E90FF' : '#5e5e5e')};
+  border-radius: 8px;
 `
 
 export const Contador = styled.div`
   font-size: 24px;
-
   font-weight: bold;
   display: block;
 `
